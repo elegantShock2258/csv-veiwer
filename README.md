@@ -8,6 +8,6 @@ inspired by [this post from reddit](https://www.reddit.com/r/unixporn/comments/w
 
 
 Thanks To,
-    @ikalnytskyi for [termcolor](https://github.com/ikalnytskyi/termcolor)
-    @p-ranav for [tabulate](https://github.com/p-ranav/tabulate)
+    [@ikalnytskyi](https://github.com/ikalnytskyi) for [termcolor](https://github.com/ikalnytskyi/termcolor)
+    [@p-ranav](https://github.com/p-ranav) for [tabulate](https://github.com/p-ranav/tabulate)
     @everyone on [StackOverflow](https://www.stackoverflow.com)
