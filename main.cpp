@@ -2,10 +2,13 @@
 
 #include "libs/CSV.hpp"
 #include "libs/tabulate.hpp"
+#include "libs/termcolor.hpp"
+
 #include "themes/themes.hpp"
 
 //TODO: Complete help()
 //      add a function to add or remove a record by line number
+//      add input validation
 
 void printDocument(CSV::Document& doc, long unsigned int numberOfLines = 4){
     tabulate::Table table;
@@ -29,12 +32,11 @@ void printDocument(CSV::Document& doc, long unsigned int numberOfLines = 4){
     Themes::Theme theme(table,columns[0].size(),numberOfLines);
     theme.Default();
                         
-    std::cout << table; 
+    std::cout << table << std::endl; 
 
 }
 
 void help(){
-
 }
 
 // first param is file

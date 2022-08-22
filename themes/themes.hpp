@@ -23,7 +23,7 @@ namespace Themes{
             void Default(){
                 for(int i = 0 ; i< height ; i++){
                     for(int j =0 ; j<width; j++){
-                        if(i==0) table[0][j].format().font_color(tabulate::Color::green).font_style({tabulate::FontStyle::bold,tabulate::Fon});
+                        if(i==0) table[0][j].format().font_color(tabulate::Color::green).font_style({tabulate::FontStyle::bold});
                         else if(j==0) table[i][0].format().font_color(tabulate::Color::blue).font_style({tabulate::FontStyle::bold});
                         else table[i][j].format().font_color(tabulate::Color::cyan).font_style({tabulate::FontStyle::bold});
                     }
