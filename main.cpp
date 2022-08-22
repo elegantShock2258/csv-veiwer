@@ -2,10 +2,9 @@
 
 #include "libs/CSV.hpp"
 #include "libs/tabulate.hpp"
-
+#include "themes/themes.hpp"
 
 //TODO: Complete help()
-//      Implement Console Table
 //      add a function to add or remove a record by line number
 
 void printDocument(CSV::Document& doc, long unsigned int numberOfLines = 4){
@@ -25,10 +24,11 @@ void printDocument(CSV::Document& doc, long unsigned int numberOfLines = 4){
     }
 
     //styling
+    // TODO: add customisability and themes!
 
-    for(long unsigned int i = 0 ; i<=columns.size();i++)
-        table[0][i].format().font_color(tabulate::Color::green).font_style({tabulate::FontStyle::bold});
-
+    Themes::Theme theme(table,columns[0].size(),numberOfLines);
+    theme.Default();
+                        
     std::cout << table; 
 
 }
