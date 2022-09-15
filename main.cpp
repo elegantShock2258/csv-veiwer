@@ -37,6 +37,7 @@ void printDocument(CSV::Document& doc, long unsigned int numberOfLines = 4){
 }
 
 void help(){
+	std::cout << "Usage: csv-viewer <file-name>.CSV\n";
 }
 
 // first param is file
